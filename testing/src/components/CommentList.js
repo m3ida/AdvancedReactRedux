@@ -7,8 +7,8 @@ const CommentList = () => {
   return (
     <div>
       <ul>
-        {comments?.map((comment) => (
-          <li key={comment}>{comment}</li>
+        {comments?.map((comment, i) => (
+          <li key={i}>{comment}</li>
         ))}
       </ul>
     </div>
